@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">What type of grain bowl should we have for dinner?</div>
+        <div class="item" id="results">?????</div>
+        <div class="item">
+            <button id="decide">Dinner</button>
+        </div>
+    </div>
+
+    <script>
+        const decide = document.getElementById("decide");
+        const results = document.getElementById("results");
+        const meals = ["Philly", "Enchilada", "Stirfy", "Italian", "Stroganoff", "Curry", "Date and Walnut"];
+        const dinner = () => meals[Math.floor(Math.random() * meals.length)];
+        decide.onclick = () => results.innerHTML = dinner();
+    </script>
+</body>
+
+</html>
