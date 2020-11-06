@@ -1,7 +1,7 @@
 {
-    "name": "css-grid",
+    "name": "dinner-decide",
     "version": "1.0.0",
-    "description": "",
+    "description": "We only want one thing for dinner, but can't decide which version.",
     "main": "index.js",
     "scripts": {
         "start": "run-script-os",
@@ -9,10 +9,10 @@
         "//": "Hello! If you are having trouble running this command. Try changing Firefox Developer Edition to FirefoxDeveloperEdition",
         "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox Developer Edition'"
     },
-    "author": "",
+    "author": "DTHutton",
     "license": "ISC",
     "devDependencies": {
-        "browser-sync": "^2.26.7",
-        "run-script-os": "^1.0.3"
+        "browser-sync": "^2.26.13",
+        "run-script-os": "^1.1.3"
     }
 }
